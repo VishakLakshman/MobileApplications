@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mypc.courseapplication.InstructorsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="36dp"
+            android:text="Instructors" />
+
+        <ImageView
+            android:id="@+id/imageView_instructor_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView31"
+            android:layout_marginEnd="37dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/add" />
+
+        <TextView
+            android:layout_width="345dp"
+            android:layout_height="400dp"
+            android:id="@+id/textView_instructor_warning"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/imageView_instructor_add"
+            android:layout_marginTop="25dp"
+            android:text="You haven’t added any instructor yet, please add at least one instructor to continue"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="345dp"
+            android:layout_height="400dp"
+            android:id="@+id/recyclerView_instructor_instructors"
+            android:layout_marginLeft="20dp"
+            android:visibility="invisible"
+            android:layout_below="@+id/imageView_instructor_add"
+            android:layout_marginTop="25dp" />
+    </RelativeLayout>
+
+</FrameLayout>

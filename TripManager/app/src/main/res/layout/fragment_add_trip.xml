@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mypc.session3.AddTripFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:hint="Name" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="21dp"
+        android:text="No of persons" />
+
+    <EditText
+        android:id="@+id/editText_add_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editText_add_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText_add_name"
+        android:layout_alignTop="@+id/textView4"
+        android:ems="2"
+        android:inputType="textPersonName"
+         />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/editText_add_number"
+        android:layout_marginTop="27dp"
+        android:text="Cost" />
+
+    <TextView
+        android:id="@+id/textView_add_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toEndOf="@+id/textView4"
+        android:text="$0.00" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="320dp"
+        android:layout_height="280dp"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="30dp"
+        android:id="@+id/recylcer_add"/>
+
+    <Button
+        android:id="@+id/button_add_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView_add_cost"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/button_add_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_add_add"
+        android:layout_marginEnd="13dp"
+        android:layout_toStartOf="@+id/textView_add_cost"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/button_add_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/recylcer_add"
+        android:layout_alignTop="@+id/button_add_add"
+        android:layout_marginEnd="17dp"
+        android:text="Cancel" />
+</RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mypc.filesearch">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add words to search"
+        android:id="@+id/textView" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchListView"
+        android:focusable="true"
+        android:layout_below="@+id/textView"></ListView>
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/searchListView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/searchListView"
+        android:layout_toEndOf="@id/searchEditText"
+        android:background="@drawable/add"
+        android:layout_alignTop="@+id/searchTextView" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_alignParentBottom="true"
+
+    android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+    android:id = "@+id/lk">
+    <CheckBox
+        android:id="@+id/matchCaseCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Match Case"
+        />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/matchCaseCheck"
+        android:text="Search"
+        android:layout_alignTop="@+id/searchTextView" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+</LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tenp"
+        />
+
+</android.widget.RelativeLayout>

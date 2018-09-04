@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sort">
+        <item>Select</item>
+        <item>Cost:Low to High</item>
+        <item>Cost:High to Low</item>
+    </string-array>
+
+
+</resources>

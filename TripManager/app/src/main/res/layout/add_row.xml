@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkBox_addrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="48dp"
+         />
+
+    <TextView
+        android:id="@+id/textView_addrow_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/checkBox_addrow"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView_addrow_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_addrow_place"
+        android:layout_below="@+id/checkBox_addrow"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView_addrow_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_addrow_place"
+        android:layout_marginStart="48dp"
+        android:layout_toEndOf="@+id/textView_addrow_place"
+        android:text="TextView" />
+</RelativeLayout>

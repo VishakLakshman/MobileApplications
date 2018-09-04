@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mypc.courseapplication.AddInstructorFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_addinstructor_profilepic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/add_photo" />
+
+        <EditText
+            android:id="@+id/editText_addinstructor_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView_addinstructor_profilepic"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_addinstructor_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText_addinstructor_firstname"
+            android:layout_below="@+id/editText_addinstructor_firstname"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_addinstructor_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText_addinstructor_lastname"
+            android:layout_below="@+id/editText_addinstructor_lastname"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editText_addinstructor_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText_addinstructor_email"
+            android:layout_below="@+id/editText_addinstructor_email"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:hint="Personal Website"
+            android:inputType="textUri" />
+
+        <Button
+            android:id="@+id/button_addinstructor_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="450dp"
+            android:text="REGISTER" />
+
+    </RelativeLayout>
+</FrameLayout>

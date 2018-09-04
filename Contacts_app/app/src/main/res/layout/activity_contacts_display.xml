@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/displayImage"
+                android:layout_marginTop="20dp"
+                android:layout_width="232dp"
+                android:layout_height="147dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/add_photo"
+                android:layout_weight="0.43" />
+
+
+            <TextView
+                android:id="@+id/displayFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="First"
+                android:ems="15"
+
+                />
+            <TextView
+                android:id="@+id/displayLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="Last"
+                android:ems="15"
+
+                />
+            <TextView
+                android:id="@+id/displayCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="Company"
+                android:ems="15"
+
+                />
+            <TextView
+                android:id="@+id/displayPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="Phone"
+                android:ems="15"
+
+                />
+            <TextView
+                android:id="@+id/displayEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="Email"
+                android:ems="15"
+
+                />
+            <TextView
+                android:id="@+id/displayURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="URL"
+                android:ems="15"
+                android:autoLink="web"
+                android:textColorLink="#0000ff"
+                />
+            <TextView
+                android:id="@+id/displayAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="Address"
+                android:ems="15"
+
+                />
+            <TextView
+                android:id="@+id/displayBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="Birthday"
+                android:ems="15"
+                />
+            <TextView
+                android:id="@+id/displayNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="Nickname"
+                android:ems="15"
+
+                />
+            <TextView
+                android:id="@+id/displayFacebookProfileURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="FB"
+                android:ems="15"
+                android:autoLink="web"
+                android:textColorLink="#0000ff"
+                />
+            <TextView
+                android:id="@+id/displayTwitterProfileURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="Twitter"
+                android:ems="20"
+                android:autoLink="web"
+                android:textColorLink="#0000ff"
+                />
+            <TextView
+                android:id="@+id/displaySkype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="Skype"
+                android:ems="15"
+                android:autoLink="web"
+                android:textColorLink="#0000ff"
+                />
+            <TextView
+                android:id="@+id/displayYouTubeChannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:hint="Youtube"
+                android:ems="15"
+                android:autoLink="web"
+                android:textColorLink="#0000ff"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

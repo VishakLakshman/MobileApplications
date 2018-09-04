@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mypc.triviaapp.TriviaActivity">
+
+
+    <TextView
+        android:id="@+id/textQuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="23dp"
+        android:text="QuestionNumber" />
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textQuestionNumber"
+        android:layout_marginEnd="61dp"
+        android:text="TimeRemaining" />
+
+    <ImageView
+        android:id="@+id/imageViewQuestion"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/textQuestionNumber"
+        android:layout_alignStart="@id/textQuestionNumber" />
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textQuestionNumber"
+        android:layout_below="@+id/imageViewQuestion"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="24dp"
+        android:text="QuestionText" />
+<ScrollView
+    android:layout_width="250dp"
+    android:layout_height="130dp"
+    android:layout_alignStart="@+id/textQuestionNumber"
+    android:layout_below="@+id/textViewQuestion"
+    >
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/radioGroup" />
+</ScrollView>
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@id/textQuestionNumber"
+        android:text="Quit" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:text="Next" />
+
+    <ProgressBar
+        android:id="@+id/imageLoadBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewQuestion"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="63dp"
+        android:layout_toStartOf="@id/textTimer" />
+
+
+</android.widget.RelativeLayout>

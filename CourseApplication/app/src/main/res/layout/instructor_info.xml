@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageView_instructor_info_profilepic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/textView_instructor_info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/imageView_instructor_info_profilepic"
+        android:layout_marginTop="1dp"
+        android:text="Instructor Name" />
+
+    <RadioButton
+        android:id="@+id/radioButton_instructor_info_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/imageView_instructor_info_profilepic"
+        />
+</RelativeLayout>
